@@ -2,6 +2,24 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+loop-studios-landing-page
+
+This is a landing page clone made with React Js.
+
+It's a boilerplate at which you can just clone 
+Into your PC and get started. How?
+
+To run this, you've to have `npm` or `yarn` package 
+Then you run :
+
+npm install
+or
+yarn add
+
+So as to install all dependencies. You can then
+edit the whole outlook of the site, e.g texts, pictures and logo
+in the file "src/components/data.js" and boom everything is ready
+
 In the project directory, you can run:
 
 ### `yarn start`
