@@ -1,0 +1,303 @@
+*{
+  box-sizing: border-box;
+}
+
+.header > img{
+  position: relative;
+}
+
+.header > .nav-items {
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  right:10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.header > .nav-items > .head-title{
+  font-size: 28px;
+}
+
+.header > .nav-items > .nav-content{
+  font-size: 15px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.header > .nav-items > .nav-content > li{
+  cursor: pointer;
+}
+
+.header > .nav-items > .nav-content > li:hover{
+  border-bottom: 2px solid white;
+}
+
+.lightdark{
+  width: 100%;
+  height: 570px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.head-content{
+  position: absolute;
+  top: 200px;
+  left:10%;
+  border: 2px solid white;
+  background: transparent;
+  padding: 20px;
+  font-size: 50px;
+  color: white;
+  width: 40%;
+}
+
+.main{
+  padding: 100px;
+}
+
+/* Section */
+.section {
+  position: relative;
+}
+.section > img{
+
+}
+
+.section > .section-text {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  width: 50%;
+  background: white;
+  padding: 80px;
+}
+
+.section > .section-text > h1{
+  font-size: 40px;
+}
+
+/* Gallery */
+.gallery{
+  margin-top: 100px;
+}
+.gallery > .gallery_title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery > .gallery_title > h3{
+  font-size: 45px;
+}
+
+.gallery > .gallery_title > .btn {
+  font-size: 15px;
+  padding: 7px 15px;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 3px;
+  color: black;
+  transition: .3s;
+}
+
+.gallery > .gallery_title > .btn:hover{
+  background: black;
+  color: white;
+}
+
+.gallery > .main-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery > .main-gallery > div{
+  position: relative;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.gallery > .main-gallery > div > p {
+  bottom: 0;
+  padding: 30px;
+  font-size: 27px;
+  color: white;
+  position: absolute;
+  text-shadow: 0 3px 3px rgba(0,0,0,0.3);
+}
+
+.gallery > .main-gallery > div > .hoverEffect{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 450px;
+  transition: .3s;
+}
+
+.gallery > .main-gallery > div > .hoverEffect:hover {
+  background: rgba(255,255,255, 0.6);
+}
+
+.gallery > .main-gallery > div > .hoverEffect:hover + p{
+  color: black;
+}
+
+/* Footer */
+.footer{
+  padding: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background: black;
+}
+
+.footer > .left_section > h3{
+  font-size: 27px;
+}
+.footer > .left_section > nav{
+  list-style-type: none;
+  color: white;
+  width: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.nav-container{
+  display: none;
+}
+
+@media only screen and (max-width:800px) {
+
+  .nav-container{
+    display: block;
+  }
+  .lightdark{
+    height: 620px;
+  }
+  .head-content{
+    width: 80%;
+    padding: 20px ;
+    font-size: 40px;
+  }
+
+  .header > .nav-items > .nav-content{
+    display: none;
+  }
+
+  .main{
+    padding: 30px;
+  }
+
+  .section > img{
+    width: 100%;
+  }
+
+  .section > .section-text {
+    position: initial;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-top:30px;
+  }
+
+  .section > .section-text > h1{
+    font-size: 30px;
+  }
+
+  .section > .section-text > p{
+    color: rgb(100,100,100);
+  }
+  
+  .footer > .left_section > nav{
+    width: auto;
+    flex-direction: column;
+  }
+
+  .gallery > .gallery_title > h3{
+    text-align: center;
+  }
+
+  .gallery{
+    position: relative;
+  }
+
+  .gallery > .gallery_title > .btn{
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+  }
+
+  .gallery > .main-gallery > div > .hoverEffect{
+    height: 110px;
+  }
+
+  .gallery > .main-gallery > div > p{
+    font-size: 15px;
+  }
+
+  .footer{
+    margin-top: 100px;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .footer > .left_section > nav > li{
+    margin-top: 20px;
+  }
+
+  .footer > .right_section{
+    margin-top: 50px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+    .head-nav{
+      position: absolute;
+      z-index: 9999999;
+      background: black;
+      width: 100%;
+      height: 100vh;
+      color: white;
+      padding: 20px 10%;
+      transition: .4s;
+    }
+
+    .head-nav > .nav-head-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    
+    }
+
+    .head-nav > .nav-head-container > h3{
+      font-size: 28px;
+    }
+
+    .head-nav > .nav-menu{
+      list-style-type: none;
+      margin-left: 0;
+      font-size: 24px;
+      margin-top: 20vh;
+      text-transform: uppercase;
+      font-weight: lighter;
+    }
+
+
+}
